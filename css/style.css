@@ -1,0 +1,351 @@
+@font-face{
+
+    font-family: 'Bebas';
+
+    src: url('../fonts/Bebas.ttf');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+@font-face{
+
+    font-family: 'MyriadPro-Regular';
+
+    src: url('../fonts/MyriadPro-Regular.otf');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.main-content {
+    height: auto;
+    min-height: 100%;
+
+}
+
+main {
+    padding: 129px 0 70px 0;
+}
+
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.header {
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: #ffffff;
+}
+.logo {
+    display: inline-block;
+    width: 302px;
+}
+.logo img {
+    display: inline-block;
+    margin: 5px 0 0 18px;
+}
+.logo h1 {
+    display: inline-block;
+    font-size: 37px;
+    position: relative;
+    left: 60px;
+    bottom: 75px;
+}
+.logo h1 span:first-child {
+    color: #fb9c06;
+    text-transform: lowercase;
+    font-family: Calibri, serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.logo h1 span:last-child {
+    font-family: Bebas, serif;
+    color: #6e6d6b;
+    position: absolute;
+    left: 0;
+    top: 38px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.header-menu {
+    height: 128px;
+    width: 600px;
+    display: inline-block;
+    float: right;
+    font-family: Calibri,sans-serif;
+    font-size: 22px;
+}
+.header-menu-link {
+    display: inline-block;
+    height: 80px;
+    width: 70px;
+    text-align: center;
+    background: url("../images/header-menu-icon.png") 7px 0 no-repeat;
+    padding-top: 55px;
+    color: #9e9b9b;
+    margin-top: 20px;
+    margin-left: 35px;
+    float: left;
+}
+.header-menu-link:hover {
+    cursor: pointer;
+    color: #4b4f4f;
+}
+.about-link {
+    background: url("../images/header-menu-icon.png") -117px 0 no-repeat;
+}
+.work-link {
+    background: url("../images/header-menu-icon.png") -234px 0 no-repeat;
+}
+.blog-link {
+    background: url("../images/header-menu-icon.png") -360px 0 no-repeat;
+}
+.contact-link {
+    background: url("../images/header-menu-icon.png") -498px 0 no-repeat;
+}
+.header:after {
+    content: '';
+    clear: both;
+}
+
+.slider {
+    text-align: center;
+}
+.slider img {
+    border-top: 4px solid #fcba50;
+    border-bottom: 4px solid #fcba50;
+
+}
+.slider .wrapper span {
+    display: inline-block;
+    position: absolute;
+    font-family: Bebas, sans-serif;
+    font-size: 37px;
+    opacity: 0.9;
+}
+.slider .wrapper span:first-child {
+    width: 380px;
+    height: 60px;
+    padding-top: 5px;
+    text-align: center;
+    background: #4a4f4f;
+    color: #fb9c06;
+    left: -22px;
+    top: -277px;
+}
+
+.slider .wrapper span:last-child {
+    width: 395px;
+    height: 70px;
+    padding-top: 10px;
+    text-align: center;
+    background: #fb9c06;
+    color: #4a4f4f;
+    left: -28px;
+    top: -184px;
+}
+
+.preview-posts {
+    height: 154px;
+    box-shadow: 0 3px 0 0p rgba(0,0,0,0.23);
+    padding: 30px 0;
+    overflow-y: hidden;
+
+}
+.post {
+    width: 258px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+    margin: 0 20px;
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    position: relative;
+}
+.post-intro {
+    display: inline-block;
+    width: 258px;
+    height: 130px;
+    overflow: hidden;
+    margin: 0;
+}
+.post-readmore-link {
+    display: inline-block;
+    position: absolute;
+    color: #ffac00;
+    font-style: italic;
+    top: 110px;
+    left: 175px;
+}
+.post-readmore-link:hover {
+    background: #4a4f4f;
+    cursor: pointer;
+}
+
+.team-link {
+    text-align: center;
+    padding: 25px 0;
+}
+.team-link span:first-child {
+    font-family: MyriadPro-Regular, serif;
+    font-size: 40px;
+    color: #ffac00;
+    text-decoration: underline;
+}
+.team-members {
+    padding: 40px 0;
+    overflow: hidden;
+}
+.member {
+    height: 470px;
+    width: 315px;
+    font-family: Calibri, sans-serif;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+}
+.team-link .member:nth-child(even) {
+    margin: 0 120px;
+}
+
+.member.member-name {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    font-size: 22px;
+}
+.member-name span:first-child {
+    color: #6e6d6b;
+    font-family: Calibri, sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+
+}
+.member-name span:last-child {
+    color: #fb9c06;
+    font-family: Calibri, sans-serif;
+    font-size: 22px;
+}
+.member img {
+    width: 295px;
+    display: inline-block;
+    margin: 25px 0;
+    border-radius: 50%;
+    border: 10px solid #fe8301;
+}
+.member-about {
+    display: inline-block;
+    height: 85px;
+    width: 265px;
+    color: #6e6d6b;
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    overflow: hidden;
+    margin: 0;
+}
+
+.feedback {
+    text-align: center;
+    padding: 50px 0;
+    height: 400px;
+}
+.feedback span:first-child {
+    font-family: MyriadPro-Regular, serif;
+    font-size: 40px;
+    color: #ffac00;
+    text-decoration: underline;
+}
+.feedback-send {
+    padding-top: 65px;
+    color: #fe8301;
+    font-family: MyriadPro-Regular, serif;
+    font-size: 24px;
+    position: relative;
+}
+.feedback-send label {
+    float: left;
+    margin-bottom: 35px;
+
+
+}
+input {
+    box-sizing: border-box;
+    width: 1050px;
+    margin-left: 50px;
+    height: 35px;
+    background:  linear-gradient(to right, rgba(227, 210, 179, 0.84) 0%,rgba(0,0,0,0) 100%);
+    box-shadow: inset 0 1px 0 0 rgba(122,111,122,1);
+    font-size: 22px;
+    border: none;
+}
+
+.text-message {
+    margin-left: 17px;
+    height: 85px;
+}
+input[placeholder] {
+    padding-left: 20px;
+    font-style: italic;
+}
+
+input[value="Submit"] {
+    width: 175px;
+    height: 45px;
+    background: #fb9c06;
+    box-shadow: inset 0 -4px 0 0 rgba(122,111,122,1);
+    float: right;
+    border: none;
+    color: #ffffff;
+    margin-right: 33px;
+}
+
+input:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background: #fcba50;
+}
+
+.footer {
+    height: 50px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: -70px;
+    background: #fb9c06;
+    box-shadow: inset 0 -4px 0 0 #cc830f;
+}
+.footer span {
+    font-family: MyriadPro-Regular, serif;
+    font-size: 33px;
+    text-transform: uppercase;
+    color: white;
+}
